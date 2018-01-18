@@ -1,10 +1,10 @@
-/**
- *main - prints the size of types
- *
- *Return: the program should return 0
- *
- */
 #include <stdio.h>
+
+/**
+ * main - prints the size of various types
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	char x;
