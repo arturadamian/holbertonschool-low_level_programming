@@ -1,5 +1,5 @@
 /**
- * main - prints "\"Programming is like building a multilingual puzzle\n" 
+ * main - prints "\"Programming is like building a multilingual puzzle\n"
  *
  *Return: the program should return 0
  */
