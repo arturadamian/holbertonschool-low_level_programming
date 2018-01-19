@@ -13,7 +13,10 @@ int main(void)
 			putchar (c + '0');
 
 			if (c != 9)
+			{
 				putchar (',');
+				putchar (' ');
+			}
 		c++;
 	}
 	putchar('\n');
