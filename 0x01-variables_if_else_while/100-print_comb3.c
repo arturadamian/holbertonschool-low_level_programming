@@ -12,11 +12,14 @@ int main(void)
 	{
 		if (!(c / 10 >= c % 10))
 		{
-		putchar('0' + c / 10);
-		putchar('0' + c % 10);
-		if (c != 89)
-		putchar(',');
-		putchar(' ');
+			putchar('0' + c / 10);
+			putchar('0' + c % 10);
+
+			if (c != 89)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar ('\n');
