@@ -26,10 +26,10 @@ int main(void)
 						putchar(' ');
 						putchar('0' + c);
 						putchar('0' + d);
-						if (!(a == 9 && b == 8))
+					if (!(a == 9 && b == 8))
 						{
-							putchar(',');
-							putchar(' ');
+						putchar(',');
+						putchar(' ');
 						}
 					}
 				}
