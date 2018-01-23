@@ -7,8 +7,12 @@
 int _islower(int c)
 {
 	if (c > 64 && c < 91)
+
 		c = 0;
+
 	else
+
 		c = 1;
+
 	return (c);
 }
