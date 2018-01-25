@@ -2,9 +2,6 @@
 
 /**
  * spacencomma - print spaces and commas
- * puttimes - print the digits
- * print_times_table - prints the n times table, starting with 0
- *
  * @r: first parameter
  * @a: second parameter
  */
@@ -20,7 +17,10 @@ void spacencomma(int r, int a)
 		_putchar(' ');
 	}
 }
-
+/**
+ * puttimes - print the digits
+ * @r: the result of the multiplication
+ */
 void puttimes(int r)
 {
 	if (r < 10)
@@ -39,6 +39,10 @@ void puttimes(int r)
 		_putchar((r % 10) + '0');
 	}
 }
+/**
+ *print_times_table - prints the n times table, starting with 0
+ *@n: the limit number
+ */
 void print_times_table(int n)
 {
 	int i;
