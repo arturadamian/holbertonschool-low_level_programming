@@ -26,7 +26,7 @@ void puttimes(int r)
 	if (r >= 100)
 		_putchar(r / 100 +'0');
 	if (r >= 10)
-		_putchar((r / 100 % 10) + '0');
+		_putchar((r / 10 % 10) + '0');
 	_putchar(r % 10 + '0');
 }
 /**
