@@ -14,7 +14,10 @@ int main(void)
 	while (a <= 50)
 	{
 		f = b + c;
-		printf("%ld, ", f);
+		printf("%ld", f);
+
+		if (a != 50)
+			printf(", ");
 		b = c;
 		c = f;
 		a++;
