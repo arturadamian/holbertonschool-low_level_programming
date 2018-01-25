@@ -23,21 +23,11 @@ void spacencomma(int r, int a)
  */
 void puttimes(int r)
 {
-	if (r < 10)
-
-		_putchar('0' + r);
-
-	else if (r < 9 && r < 100)
-	{
-		_putchar(r / 10 + '0');
-		_putchar(r % 10 + '0');
-	}
-	else
-	{
-		_putchar(r / 100 + '0');
-		_putchar(((r / 10) % 10) + '0');
-		_putchar((r % 10) + '0');
-	}
+	if (r >= 100)
+		_putchar(r / 100 +'0');
+	if (r >= 10)
+		_putchar((r / 100 % 10) + '0');
+	_putchar(r % 10 + '0');
 }
 /**
  *print_times_table - prints the n times table, starting with 0
