@@ -17,4 +17,5 @@ int add(int, int);
 void print_times_table(int);
 void spacencomma(int, int);
 void puttimes(int);
+void print_to_98(int);
 #endif
