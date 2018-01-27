@@ -1,4 +1,5 @@
-#include <stdio.h>
+ #include <stdio.h>
+
 /**
  * main - prints the largest prime factor of the number
  *
@@ -9,16 +10,11 @@ int main(void)
 	long int a;
 	long int c = 612852475143;
 
-	while (c % 2 == 0)
-	{
-		c = c / 2;
-	}
-	for (a = 3; a <= c; a = a + 2)
+	for (a = 2; a < c; a++)
 	{
 		while (c % a == 0)
 			c = c / a;
 	}
-	printf("%ld", a);
-	printf("\n");
+	printf("%ld\n", c);
 	return (0);
 }
