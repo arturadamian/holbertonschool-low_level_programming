@@ -2,30 +2,30 @@
 
 /**
  * print_number - prints a long integer with a putchar
- * @n: first parametery
+ * @n: number (a)
  */
 
 void print_number(int n)
 {
-	int i = 1;
-	int s = 1;
+	int c = 1;
 	int a = n;
+	int d = 1;
 
+	if (a < 0)
+		_putchar('-');
 	while (a > 9 || a < -9)
 	{
-		a = a / 10;
-		s = s * 10;
-			i++;
+		a /= 10;
+		d *= 10;
+		c++;
 	}
-	while (i > 0)
+	for (a = n; c > 0; c--)
 	{
-		if (n < 0)
-		{
-			n = n * -1;
-			_putchar('-');
-		}
-		_putchar(((n / s) % 10) + '0');
-		s = s / 10;
-		i--;
+		if (a < 0)
+			_putchar(a / d * -1 + '0');
+		else
+			_putchar(a / d + '0');
+		a %= d;
+		d /= 10;
 	}
 }
