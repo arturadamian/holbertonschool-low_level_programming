@@ -9,18 +9,21 @@ int main(void)
 	long int f;
 	long int b = 1;
 	long int c = 2;
-	int a = 0;
+	int a;
 
-	while (a <= 50)
+	printf("%ld, ", b);
+	printf("%ld, ", c);
+
+	for (a = 3; a <= 50; a++)
 	{
 		f = b + c;
-		printf("%ld", f);
-
-		if (a != 50)
-			printf(", ");
 		b = c;
 		c = f;
-		a++;
+
+		if (a < 50)
+			printf("%ld, ", f);
+		else
+			printf("%ld", f);
 	}
 	return (0);
 }
