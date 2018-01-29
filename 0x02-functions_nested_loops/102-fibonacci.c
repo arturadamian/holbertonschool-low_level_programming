@@ -23,7 +23,7 @@ int main(void)
 		if (a < 50)
 			printf("%ld, ", f);
 		else
-			printf("%ld", f);
+			printf("%ld\n", f);
 	}
 	return (0);
 }
