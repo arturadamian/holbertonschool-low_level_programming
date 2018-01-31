@@ -15,8 +15,8 @@ void puts_half(char *str)
 	if (length_of_the_string % 2 == 0)
 		c = length_of_the_string / 2;
 	else
-		c = (length_of_the_string - 1) / 2;
-	while (c < length_of_the_string)
+		c = ((length_of_the_string - 1) / 2) + 1;
+	while (c <= length_of_the_string)
 	{
 		_putchar(str[c]);
 		c++;
