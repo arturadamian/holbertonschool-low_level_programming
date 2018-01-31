@@ -12,7 +12,7 @@ void puts_half(char *str)
 	for (c = 0; str[c] != '\0'; c++)
 		;
 	b = c;
-	if (b % 2 == 0)
+	if (c % 2 == 0)
 		b = b / 2;
 	else
 		b = ((b - 1) / 2) + 1;
