@@ -31,14 +31,14 @@ int _atoi(char *s)
 		i -= 1;
 		while (b > 0)
 		{
-			v += (s[i] - 48) * c;
+			v += ((s[i] - 48) * c);
 			c *= 10;
 			b--;
 			i--;
 		}
+		v *= a;
 	}
 	else
 		return (0);
-	v *= a;
 	return (v);
 }
