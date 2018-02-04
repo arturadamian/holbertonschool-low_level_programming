@@ -13,15 +13,16 @@ int _atoi(char *s)
 	int num = 1;
 	unsigned int val = 0;
 
-	while (*s)
+	while (s[i] < '0' || s[i] > '9')
 	{
 		if (s[i] == '-')
 			num *= -1;
-		if (s[i] >= '0' && s[i] <= '9')
-			val *= 10 + s[i] - 48;
-		if (s[i] < '0' || s[i] > '9')
-			break;
-		s++;
+		i++;
 	}
-	return (val);
+	while (s[i] >= '0' && s[i] <= '9')
+	{
+		val = val * 10 + (s[i] - '0');
+		i++;
+	}
+	return (val * num);
 }
