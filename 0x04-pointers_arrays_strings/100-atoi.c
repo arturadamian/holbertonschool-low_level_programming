@@ -12,8 +12,8 @@ int _atoi(char *s)
 	int i = 0;
 	int a = 1;
 	int b = 0;
-	unsigned int c = 1;
-	unsigned int v = 0;
+	long long int c = 1;
+	long long int v = 0;
 
 	while (s[i] < '0' || s[i] > '9')
 	{
