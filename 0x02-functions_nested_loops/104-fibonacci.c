@@ -23,7 +23,8 @@ int main(void)
 		if (a < 98)
 			printf("%u, ", f);
 		else
-			printf("%u\n", f);
+			printf("%u", f);
 	}
+	printf("\n");
 	return (0);
 }
