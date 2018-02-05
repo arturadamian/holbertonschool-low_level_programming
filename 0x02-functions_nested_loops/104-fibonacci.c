@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	unsigned int f;
-	unsigned int b = 1;
-	unsigned int c = 2;
+	double f;
+	double b = 1;
+	double c = 2;
 	int a;
 
-	printf("%u, ", b);
-	printf("%u, ", c);
+	printf("%.0f, ", b);
+	printf("%.0f, ", c);
 
 	for (a = 3; a <= 98; a++)
 	{
@@ -21,9 +21,9 @@ int main(void)
 		c = f;
 
 		if (a < 98)
-			printf("%u, ", f);
+			printf("%.0f, ", f);
 		else
-			printf("%u", f);
+			printf("%.0f", f);
 	}
 	printf("\n");
 	return (0);
