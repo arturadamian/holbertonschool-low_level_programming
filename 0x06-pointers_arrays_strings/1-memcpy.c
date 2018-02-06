@@ -2,9 +2,12 @@
 
 
 /**
+ * _memcpy - copies memory area
+ * @dest: pointer to a string
+ * @src: pointer to a string
+ * @n: first parameter
  *
- *
- *
+ * Return: the result
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
