@@ -24,8 +24,8 @@ char *_strstr(char *haystack, char *needle)
 				if  (needle[i] != haystack[i + j])
 					break;
 			}
-			if (needle[j] != '\0')
-				return (haystack + j);
+			if (needle[i] == '\0')
+					return (haystack + j);
 		}
 	}
 	return (0);
