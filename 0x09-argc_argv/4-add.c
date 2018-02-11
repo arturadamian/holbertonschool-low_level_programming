@@ -14,11 +14,7 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 0;
 
-	if (argc == 1)
-		printf("%d\n", 0);
-	else
-	{
-		for (i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++ )
 		{
 			if (*argv[i] > '9' || *argv[i] < '0')
 			{
@@ -27,7 +23,6 @@ int main(int argc, char *argv[])
 			}
 			sum += atoi(argv[i]);
 		}
-		printf("%d\n", sum);
-	}
+	printf("%d\n", sum);
 	return (0);
 }
