@@ -1,6 +1,4 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdarg.h>
 
 
 /**
@@ -63,7 +61,7 @@ void print_all(const char * const format, ...)
 	comma = ", ";
 	emp = "";
 	y = 0;
-	while (format[y])
+	while (format && format[y])
 	{
 		x = 0;
 		while (types[x].op != NULL)
