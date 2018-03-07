@@ -3,6 +3,7 @@
 
 /**
  * delete_nodeint_at_index - deletes a node
+ * @head: pointer to a list
  * @index: index of a node
  *
  * Return: 1 if success or -1
@@ -12,8 +13,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	unsigned int count = 0;
 	listint_t *temp, *del;
 
-	if (!head || !(*head))
-		return (0);
+	if (head != NULL || *head != NULL)
+		return (-1);
 	temp = *head;
 	if (index == 0)
 	{
