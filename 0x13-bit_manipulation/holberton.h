@@ -3,11 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct listint_s
-{
-	int n;
-	struct listint_s *next;
-} array;
 int _putchar(char s);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
