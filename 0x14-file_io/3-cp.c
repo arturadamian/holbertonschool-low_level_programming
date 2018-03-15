@@ -46,7 +46,7 @@ void error(int err, ...)
 int main(int argc, char *argv[])
 {
 	int fd1, fd2, rd, wr;
-	char *buf[1024];
+	char buf[1024];
 
 	if (argc != 3)
 		error(97);
