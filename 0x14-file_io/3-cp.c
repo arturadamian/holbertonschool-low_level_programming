@@ -45,8 +45,8 @@ void error(int err, ...)
  */
 int main(int argc, char *argv[])
 {
-	int fd1, fd2, rd, wr;
-	char buf[1024];
+	int fd1, fd2, rd, wr, close_f;
+	char *buf[1024];
 
 	if (argc != 3)
 		error(97);
@@ -66,8 +66,10 @@ int main(int argc, char *argv[])
 		if (wr == -1)
 			error(99, argv[2]);
 	} while (rd == 1024);
+	close_f = close(fd1);
 	if (close(fd1) == -1)
 		error(100, fd1);
+	close_f = close(fd2);
 	if (close(fd2) == -1)
 		error(100, fd2);
 	return (0);
