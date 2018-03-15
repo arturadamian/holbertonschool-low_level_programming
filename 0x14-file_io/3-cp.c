@@ -12,25 +12,25 @@ void error(int err, ...)
 	va_start(list, err);
 	if (err == 97)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	if (err == 98)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file ");
-		dprintf(STDERR_FILENO, "%s", va_arg(list, char *));
+		dprintf(STDERR_FILENO, "%s\n", va_arg(list, char *));
 		exit(98);
 	}
 	if (err == 99)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to ");
-		dprintf(STDERR_FILENO, "%s", va_arg(list, char *));
+		dprintf(STDERR_FILENO, "%s\n", va_arg(list, char *));
 		exit(99);
 	}
 	if (err == 100)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd ");
-		dprintf(STDERR_FILENO, "%d", va_arg(list, int));
+		dprintf(STDERR_FILENO, "%d\n", va_arg(list, int));
 		exit(100);
 	}
 	va_end(list);
