@@ -50,6 +50,8 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		error(97);
+	if (argv[1] == NULL)
+		error(98, argv[1]);
 	fd1 = open(argv[1], O_RDONLY);
 	if (fd1 == -1)
 		error(98, argv[1]);
