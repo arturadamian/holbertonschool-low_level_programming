@@ -67,10 +67,10 @@ int main(int argc, char *argv[])
 			error(99, argv[2]);
 	} while (rd == 1024);
 	close_f = close(fd1);
-	if (close(fd1) == -1)
+	if (close_f == -1)
 		error(100, fd1);
 	close_f = close(fd2);
-	if (close(fd2) == -1)
+	if (close_f == -1)
 		error(100, fd2);
 	return (0);
 }
