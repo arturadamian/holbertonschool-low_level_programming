@@ -2,10 +2,11 @@
 
 
 /**
+ * delete_dnodeint_at_index - deletes a node at index
+ * @head: pointer to a list
+ * @index: index
  *
- *
- *
- *
+ * Return: 1 or -1
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -22,7 +23,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (1);
 	}
 	else if (index == 0 && !current)
-		return (1);
+		return (-1);
 	for (c = 0; current && c < index; c++)
 		current = current->next;
 	if (c == index)
