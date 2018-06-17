@@ -19,11 +19,8 @@ def cell_perim(i, j, grid):
 def island_perimeter(grid):
     """returns the perimeter of the island"""
     perim = 0
-    if grid:
-        if len(grid) > 2:
-            for i in range(1, (len(grid) - 1)):
-                if len(grid[i]) > 2:
-                    for j in range(1, (len(grid[0]) - 1)):
-                        if grid[i][j] == 1:
-                            perim += cell_perim(i, j, grid)
-    return perim
+    for i in range(1, (len(grid) - 1)):
+        for j in range(1, (len(grid[0]) - 1)):
+            if grid[i][j] == 1:
+                perim += cell_perim(i, j, grid)
+    return perim if perim > 0 else None
