@@ -1,7 +1,4 @@
-# 0x1C.c
-
-Functions to print binary trees in a pretty way
-
+# C - Binary trees
 ```
                            .----------------------(006)-------.
                       .--(001)-------.                   .--(008)--.
@@ -11,4 +8,11 @@ Functions to print binary trees in a pretty way
 (-09)     (-07)
 ```
 
-[Original code](Original code from http://stackoverflow.com/a/13755911/5184480)
+## What you should learn from this project
+
+What is a binary tree
+What is the difference between a binary tree and a Binary Search Tree
+What is the possible gain in terms of time complexity compared to linked lists
+What are the depth, the height, the size of a binary tree
+What are the different traversal methods to go through a binary tree
+What is a complete, a full, a perfect, a balanced binary tree
