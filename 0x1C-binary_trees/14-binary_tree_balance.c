@@ -29,5 +29,7 @@ int branch_height(const binary_tree_t *tree)
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
+	if (!tree)
+		return (0);
 	return (branch_height(tree->left) - branch_height(tree->right));
 }
