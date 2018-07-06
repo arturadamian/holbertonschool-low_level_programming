@@ -26,6 +26,8 @@ int branch_height(const binary_tree_t *tree)
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
+	if (!tree)
+		return (0);
 	if (tree && (tree->right && tree->left))
 		if (branch_height(tree->right) == branch_height(tree->left))
 			return (1);
