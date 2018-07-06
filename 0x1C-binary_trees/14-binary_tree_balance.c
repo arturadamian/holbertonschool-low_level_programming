@@ -4,6 +4,7 @@
 /**
  * branch_height -  function that measures the height of a binary tree
  * @tree: pointer to the root node
+ *
  * Return: height or 0
  */
 int branch_height(const binary_tree_t *tree)
