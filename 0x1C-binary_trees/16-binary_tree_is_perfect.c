@@ -10,7 +10,7 @@ int branch_height(const binary_tree_t *tree)
 {
 	int x = 0, y = 0;
 
-	if (!tree)
+	if (!tree || (!tree->left && !tree->right))
 		return (0);
 	x = branch_height(tree->left);
 	y = branch_height(tree->right);
