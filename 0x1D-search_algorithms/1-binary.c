@@ -33,9 +33,9 @@ int binary_search_(int *array, size_t l, size_t r, int value)
 	if (r >= l)
 	{
 		m = l + (r - l) / 2;
+		print_array(array, l, r);
 		if (array[m] == value)
 			return (m);
-		print_array(array, l, r);
 		if (array[m] > value)
 			return (binary_search_(array, l, m - 1, value));
 		return (binary_search_(array, m + 1, r, value));
