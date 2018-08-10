@@ -30,15 +30,15 @@ int binary_search_(int *array, size_t l, size_t r, int value)
 {
 	size_t m = 0;
 
-	m = l + (r - l) / 2;
 	if (r >= l)
 	{
+		m = l + (r - l) / 2;
 		if (array[m] == value)
 			return (m);
 		print_array(array, l, r);
 		if (array[m] > value)
-			binary_search_(array, l, m - 1, value);
-		binary_search_(array, m + 1, r, value);
+			return (binary_search_(array, l, m - 1, value));
+		return (binary_search_(array, m + 1, r, value));
 	}
 	return (-1);
 }
